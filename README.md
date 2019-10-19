@@ -1,5 +1,5 @@
 # Spacefix
-Simple gem designed to prevent extra whitespace from sneaking into string field.
+Simple gem for validate and removing whitespace into string fields.
 
 ## Installation
 
@@ -19,7 +19,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+class Model < ApplicationRecord
+  include Spacefix
+  validate_spasefix :field_one, :field_two, validate: true, squish: false, message: 'Please removing excess whitespace'
+end
+```
+
+squish, validate, message - optional
 
 ## Contributing
 

@@ -10,9 +10,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Konstantin Goryachev"]
   spec.email         = ["kevin.glare@gmail.com"]
 
-  spec.summary       = 'Spacefix plugin'
-  spec.description   = 'Spacefix plugin'
-  spec.homepage      = 'Spacefix plugin'
+  spec.summary       = 'Whitespace validator'
+  spec.description   = 'Simple gem for validate and removing whitespace into string fields.'
+  spec.homepage      = 'https://github.com/kgoryachev/spacefix'
   spec.license       = 'MIT'
 
   spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do
@@ -27,5 +27,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'bundler', '~> 2.0.2', '>= 1.16'
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.2'
-
 end
